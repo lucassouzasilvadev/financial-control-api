@@ -1,4 +1,6 @@
 package com.financialcontrolapi.repository
 
-interface CategoriaRepository {
-}
+import com.financialcontrolapi.model.Categoria
+import org.springframework.data.jpa.repository.JpaRepository
+
+interface CategoriaRepository : JpaRepository<Categoria, Long>
