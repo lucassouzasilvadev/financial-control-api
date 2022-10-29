@@ -3,10 +3,10 @@ package com.financialcontrolapi.model
 import javax.persistence.*
 
 @Entity
-@Table(name = "categoria")
-data class Categoria(
+@Table(name = "category")
+data class category(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val codigo: Long? = null,
-    val nome: String? = null
+    val code: Long? = null,
+    val name: String? = null
 )
